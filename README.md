@@ -30,6 +30,20 @@ sudo apt update && sudo apt upgrade -y
 ```
 ## 2. Seguridad basica
 
+### Contraseñas
+
+- Usar contraseñas complejas y únicas, no usar la misma para tu usuario normal y para root.
+- Si tienes la misma contraseña para todas tus cuentas y servicios, un data breach puede arrasar con todo.
+- Evitar iniciar sesión en Ubuntu como usuario root, usar sudo siempre que se pueda.
+
+[Enlace](https://www.pluralsight.com/resources/blog/cybersecurity/modern-password-guidelines) a un artículo sobre buenas practicas para contraseñas.
+
+Algunos gestores de contraseña recomendados son Keepass y Bitwarden, que además son de codigo abierto.
+
+### Cifrado
+
+Veracrypt
+
 ### Firewall (ufw)
 Instalar Uncomplicated Firewall si no lo tienes:
 ```bash
@@ -52,10 +66,28 @@ sudo ufw enable
 ```
 ### Actualizaciones automáticas
 
+### VPN Gratuita
+
+Proton vpn
+mullvad vpn
+
 ### Permisos
+
+Conguración > Notificaciones y desactivar Lock screen notifications para evitar que nadie vea nada con tu dispositivo debloqueado
+
+### DNS
+
+DNS es esencial para conectarse a Internet, la mayoría de DNS por defecto trakean navegacion. Si usas una vpn probablemente esta ya utiliza su propio DNS
+En caso contrario algunos DNS recomendados son 1.1.1.1 y 9.9.9.9
+Para mas info ver https://www.privacytools.io/encrypted-dns
 
 ## 3. Software esencial
 
+### Navegador
+
+Simplemente evita Chrome. Algunos recomendados son Firefox (con hardening), Librewolf, Mullvad...
+Para motor de búsqueda duckduckgo o startpage
+### otras cosas (buscar más)
 balenaEtcher para hacer usb's bootables, el disks no me funcionó.
 
 instalar curl
@@ -64,7 +96,11 @@ antivirus ClamAV
 
 veracrypt para cifrar
 
+sudo apt install libreoffice -y
+
 instalar pip pip3 o pipx
+
+Tambien como consejo general usar FOSS (free and open source software)
 
 ## 4. Herramientas de desarrollo
 
